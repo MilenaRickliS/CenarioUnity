@@ -3610,6 +3610,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca0f4e18ffd2df4491f7b0b2758d444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 3344480176874412878}
+  offset: {x: 0, y: 0, z: 0}
+  useOffsetValues: 0
+  rotateSpeed: 5
+  pivot: {fileID: 5308406}
+  maxViewAngles: 45
+  minViewAngles: -45
+  invertY: 0
 --- !u!1001 &1044260882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10168,7 +10176,7 @@ MonoBehaviour:
   controller: {fileID: 3344480176874412879}
   gravityScale: 1
   Animate: {fileID: 0}
-  pivot: {fileID: 0}
+  pivot: {fileID: 5308406}
   rotateSpeed: 5
   playerModel: {fileID: 2675749150076633588}
 --- !u!4 &4616179702629015501

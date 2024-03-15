@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10240,7 +10240,7 @@ Transform:
   m_GameObject: {fileID: 2675749150076633588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 156.2, y: 66.7, z: -204}
+  m_LocalPosition: {x: 156.2, y: 71.3, z: -204}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10288,10 +10288,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb24cd4ae7daea347b3905921b457435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  jumpForce: 6
+  moveSpeed: 20
+  jumpForce: 15
   controller: {fileID: 3344480176874412879}
-  gravityScale: 1
+  gravityScale: 5
   Animate: {fileID: 0}
   pivot: {fileID: 5308406}
   rotateSpeed: 5

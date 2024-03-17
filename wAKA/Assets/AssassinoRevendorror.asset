@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6481972379d23074198e734fb1cf0de5, type: 3}
+  m_Name: AssassinoRevendorror
+  m_EditorClassIdentifier: 
+  Name: Assassino Revendorror
+  Attack: 2800
+  Health: 0
+  Level: 7
+  Image: {fileID: 21300000, guid: e226394653087774b99fbf7ae8b76ce0, type: 3}

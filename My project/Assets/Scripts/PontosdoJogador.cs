@@ -1,38 +1,32 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PontosdoJogador : MonoBehaviour
 {
-    public static PontosdoJogador instance;
-
-    public GameOverScrem gameOverScrem;
-    public Text pontosMax;
-    public Text pontosAtual;
-
+    
+    public Text PontosPlayer;
     int score = 100;
-    int highscore = 0;
+    public Transform startPosition;
 
-    private void Awake(){
-        instance = this;
+    void onCollisionEnter(Collider collider){
+        if(collider.gameObject.CompareTag("Lava")){
+            score -= 100;
+            PontosPlayer.text = score + " POINTS";
+            transform.position = startPosition.position;
+        }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        pontosAtual.text = score.ToString() + " POINTS";
-        pontosMax.text = "HIGHSCORE: " + highscore.ToString();
+    void Update(){
+        if(score <= 0){
+            Time.timeScale = 0;
+            SceneManager.LoadScene("GameOver");
+        }
     }
-
-
-    public void ReceberDano(){
-        score -=1;
-        pontosAtual.text = score.ToString() + " POINTS";
-
-    }
-    public void gameOver(){
-        gameOverScrem.Setup(score);
-    }
+   
+    
 }

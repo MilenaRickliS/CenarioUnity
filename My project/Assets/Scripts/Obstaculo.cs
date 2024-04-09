@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class Obstaculo : MonoBehaviour
 {
-    // public GameObject player;
-    // public GameObject respawnPoint;
+    public GameObject player;
+    
     
 
     // private void OnTriggerEnter(Collider other){
     //     if(other.gameObject.CompareTag("Player")){
-    //         other.gameObject.GetComponent<PontosdoJogador>().ReceberDano();
+    //         PontosdoJogador.instance.ReceberDano();
     //     }
     // }
+//     void OnPlayerEnter(PlayerController player){
+//         PontosdoJogador.instance.ReceberDano();
+//     }
+    private void OnTriggerEnter(Collider other){
+        if(other.gameObject.CompareTag("Player")){
+            PontosdoJogador.instance.ReceberDano();
+        }
+    }
 }

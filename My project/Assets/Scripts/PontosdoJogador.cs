@@ -17,12 +17,12 @@ public class PontosdoJogador : MonoBehaviour
         PontosPlayer.text = score + " POINTS";
     }
 
-    void  OnCollisionEnter(Collider collider){
+    void  OnCollisionEnter(Collision collider){
         Debug.Log("OnCollisionEnter called");
         if(collider.gameObject.CompareTag("Lava")){
-            score -= 100;
+            score -= 1;
             PontosPlayer.text = score + " POINTS";
-            transform.position = startPosition.position;
+            // transform.position = startPosition.position;
         }
     }
 
